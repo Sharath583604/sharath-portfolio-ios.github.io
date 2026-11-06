@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharath — iOS Developer</title>
+<meta name="description" content="Sharath, iOS developer building offline-first enterprise apps with Swift, SwiftUI and UIKit.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Sharath<span>.</span></a>
+  <nav>
+    <a href="#sclera">Sclera</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact" class="pill">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <p class="eyebrow">iOS Developer · Kasargod, Kerala</p>
+  <h1>I build offline-first iOS apps that work where the network doesn't.</h1>
+  <p class="lead">Associate Software Developer at Sclera, shipping enterprise inspection and asset-management apps for iPhone and iPad with Swift, SwiftUI and UIKit.</p>
+  <div class="cta">
+    <a class="btn primary" href="#sclera">See my Sclera work</a>
+    <a class="btn" href="Sharath_Resume.docx" download>Download resume</a>
+  </div>
+  <ul class="facts">
+    <li><strong>Swift</strong><span>SwiftUI · UIKit</span></li>
+    <li><strong>Offline-first</strong><span>SQLite + background sync</span></li>
+    <li><strong>Camera &amp; AR</strong><span>AVFoundation · ARKit</span></li>
+    <li><strong>23</strong><span>languages localized</span></li>
+  </ul>
+</section>
+
+<section id="sclera" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Featured · Sep 2025 – Present</p>
+    <h2>Sclera iOS App</h2>
+    <p class="sub">An enterprise inspection and asset-management app for iPhone and iPad. Field inspectors run checklist-based inspections, scan assets and raise work orders, including with no network. It syncs with the Sclera backend when connectivity returns.</p>
+  </div>
+
+  <div class="grid cols-2">
+    <article class="card">
+      <h3>Offline-first architecture</h3>
+      <p>An embedded Vapor HTTP server runs inside the app. It serves a web front end and local REST APIs, backed by SQLite, with background sync to the cloud when the device is back online.</p>
+      <div class="tags"><span>Vapor</span><span>SQLite</span><span>WKWebView</span><span>REST</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Native signature capture</h3>
+      <p>A SwiftUI drawing pad with transparent PNG export. A local API opens the screen, waits up to 60 seconds and returns the base64 image. I extended the record-checklist APIs and offline database with inspector name, signature image and a signature-enabled flag, so offline signatures are stored locally and served from a local image URL.</p>
+      <div class="tags"><span>SwiftUI</span><span>Local API</span><span>SQLite</span></div>
+    </article>
+
+    <article class="card">
+      <h3>QR, barcode &amp; NFC flows</h3>
+      <p>Worked on scanning flows including secure QR validation and remote-session registration via QR.</p>
+      <div class="tags"><span>AVFoundation</span><span>NFC</span><span>QR</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Secure remote access</h3>
+      <p>Worked on the app's VPN and peer-to-peer tunnel components built on Network Extension, used for secure remote access.</p>
+      <div class="tags"><span>Network Extension</span><span>VPN</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Localization in 23 languages</h3>
+      <p>Added localization following the project's existing string and enum conventions.</p>
+      <div class="tags"><span>Localization</span></div>
+    </article>
+
+    <article class="card">
+      <h3>Monitoring &amp; release</h3>
+      <p>Used Firebase Crashlytics, Performance and Remote Config for monitoring and configuration. Handled App Store Connect archive and upload, including resolving dSYM warnings.</p>
+      <div class="tags"><span>Firebase</span><span>App Store Connect</span></div>
+    </article>
+  </div>
+
+  <p class="stack"><strong>Stack:</strong> Swift, UIKit, SwiftUI, Vapor, SQLite, WKWebView, Network Extension, Firebase, CocoaPods, Swift Package Manager</p>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-head">
+    <p class="eyebrow">More iOS work</p>
+    <h2>Projects</h2>
+  </div>
+  <div class="grid cols-2">
+    <article class="card">
+      <h3>Smart Inventory</h3>
+      <p>An iOS app built in Swift for asset tracking. Scan a QR code or barcode to instantly retrieve and manage asset details.</p>
+      <div class="tags"><span>Swift</span><span>AVFoundation</span><span>QR / Barcode</span></div>
+    </article>
+    <article class="card">
+      <h3>TrackIn-out Auto-Scheduler</h3>
+      <p>An iOS check-in/check-out app with a monotonic flow and an auto check-out scheduler, so user activity is tracked accurately and automatically.</p>
+      <div class="tags"><span>Swift</span><span>Scheduling</span><span>State flow</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Toolbox</p>
+    <h2>Skills</h2>
+  </div>
+  <div class="skills">
+    <div><h3>Frameworks</h3><p>SwiftUI, UIKit, ARKit, AVFoundation, Core Data, Auto Layout</p></div>
+    <div><h3>Languages</h3><p>Swift, Java, C</p></div>
+    <div><h3>Data &amp; networking</h3><p>SQLite3, Core Data, REST APIs, JSON, authentication, error handling</p></div>
+    <div><h3>Tools</h3><p>Xcode, Instruments, Git, Postman, CocoaPods, Swift Package Manager</p></div>
+    <div><h3>Ways of working</h3><p>Agile, code review, debugging, performance profiling</p></div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-head">
+    <p class="eyebrow">Where I've worked</p>
+    <h2>Experience</h2>
+  </div>
+  <ol class="timeline">
+    <li>
+      <div class="when">Sep 2025 – Present</div>
+      <div>
+        <h3>Associate Software Developer · Sclera</h3>
+        <p>Building iOS features in Swift, SwiftUI and UIKit. Work spans scanning (QR, barcode, ARKit validation), offline-first storage and sync, REST integration, and tuning with Xcode Instruments to reduce crashes and memory issues.</p>
+      </div>
+    </li>
+    <li>
+      <div class="when">Feb 2025 – Jul 2025</div>
+      <div>
+        <h3>Software Intern · Pentagon Space Private Limited</h3>
+        <p>Built a full-stack banking web application with Java, Servlets, JSP, JDBC and MySQL. First hands-on experience with debugging and the project lifecycle in a team.</p>
+      </div>
+    </li>
+    <li>
+      <div class="when">2021 – 2025</div>
+      <div>
+        <h3>B.E. Computer Science · SDM Institute of Technology, Ujire</h3>
+        <p>CGPA 8.4 / 10.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Let's talk</h2>
+  <p>Open to iOS development roles and interesting problems.</p>
+  <div class="cta center">
+    <a class="btn primary" href="mailto:sharathjogi04@gmail.com">sharathjogi04@gmail.com</a>
+    <a class="btn" href="tel:+918137055683">+91 81370 55683</a>
+    <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">© <span id="y"></span> Sharath · Built with plain HTML and CSS</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
