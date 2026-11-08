@@ -5,17 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sharath — iOS Developer</title>
 <meta name="description" content="Sharath, iOS developer building offline-first enterprise apps with Swift, SwiftUI and UIKit.">
+<meta name="theme-color" content="#0b0c10">
+<meta property="og:title" content="Sharath — iOS Developer">
+<meta property="og:description" content="Offline-first iOS apps with Swift, SwiftUI and UIKit.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff6a3d'/%3E%3Ctext x='32' y='44' font-size='36' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
 <header class="nav">
-  <a class="brand" href="#top">Sharath<span>.</span></a>
+  <a class="brand" href="#top"><i>S</i>Sharath</a>
   <nav>
+    <a href="#about">About</a>
     <a href="#sclera">Sclera</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#resume">Resume</a>
     <a href="#contact" class="pill">Contact</a>
   </nav>
 </header>
@@ -23,98 +32,283 @@
 <main id="top">
 
 <section class="hero">
-  <p class="eyebrow">iOS Developer · Kasargod, Kerala</p>
-  <h1>I build offline-first iOS apps that work where the network doesn't.</h1>
-  <p class="lead">iOS developer building fast, reliable apps for iPhone and iPad with Swift, SwiftUI and UIKit. I focus on offline-first architecture, camera and scanning workflows, and clean, maintainable code.</p>
-  <div class="cta">
-    <a class="btn primary" href="#sclera">See my Sclera work</a>
-    <a class="btn" href="Sharath_Resume.pdf" download>Download resume</a>
+  <div>
+    <span class="status"><b></b>Open to iOS roles</span>
+    <p class="hello">// Hi, I'm Sharath</p>
+    <h1>I build <span class="grad">offline-first</span> iOS apps that work where the network doesn't.</h1>
+    <p class="role">iOS Developer · Swift · SwiftUI · UIKit</p>
+    <p class="lead">I build fast, reliable apps for iPhone and iPad, focusing on offline-first architecture, camera and scanning workflows, and clean, maintainable code.</p>
+    <div class="cta">
+      <a class="btn primary" href="#sclera">See my Sclera work</a>
+      <div class="split">
+        <a class="btn dl" href="Sharath_Resume.pdf" download="Sharath_Resume.pdf"><span class="dl-ic" aria-hidden="true">⬇</span><span class="dl-txt">Download resume</span></a>
+        <button class="btn eye" type="button" data-open-resume aria-label="Preview resume" title="Preview resume">👁</button>
+      </div>
+    </div>
+    <div class="social">
+      <a href="mailto:sharathjogi04@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/sharath-247a3a217" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="tel:+918137055683">Call</a>
+    </div>
   </div>
-  <ul class="facts">
-    <li><strong>Swift</strong><span>SwiftUI · UIKit</span></li>
-    <li><strong>Offline-first</strong><span>SQLite + background sync</span></li>
-    <li><strong>Camera &amp; AR</strong><span>AVFoundation · ARKit</span></li>
-  </ul>
+  <div class="visual" aria-hidden="true">
+    <div class="xcode">
+      <div class="xbar"><i></i><i></i><i></i><span>Developer.swift</span></div>
+<pre class="code"><span class="ln">1</span><span class="k">struct</span> <span class="t">Developer</span> {
+<span class="ln">2</span>  <span class="k">let</span> name = <span class="s">"Sharath"</span>
+<span class="ln">3</span>  <span class="k">let</span> role = <span class="s">"iOS Developer"</span>
+<span class="ln">4</span>  <span class="k">let</span> stack = [<span class="s">"Swift"</span>, <span class="s">"SwiftUI"</span>]
+<span class="ln">5</span>  <span class="k">var</span> openToWork = <span class="k">true</span>
+<span class="ln">6</span>
+<span class="ln">7</span>  <span class="c">// works with no network</span>
+<span class="ln">8</span>  <span class="k">func</span> <span class="f">ship</span>() <span class="k">async</span> -&gt; <span class="t">App</span> {
+<span class="ln">9</span>    <span class="k">await</span> <span class="t">Build</span>.<span class="f">offlineFirst</span>()
+<span class="ln">10</span>  }
+<span class="ln">11</span>}<span class="caret"></span></pre>
+    </div>
+    <div class="phone">
+      <div class="screen">
+        <div class="island"></div>
+        <div class="sh"><strong>Inspection</strong><span class="off">● Offline</span></div>
+        <div class="row ok"><em>✓</em><div>Scan asset QR<small>Verified</small></div></div>
+        <div class="row ok"><em>✓</em><div>Safety checklist<small>12 of 12</small></div></div>
+        <div class="row todo" data-done="Saved offline"><em></em><div>Add inspector notes<small>Pending</small></div></div>
+        <div class="row todo" data-done="Saved offline"><em></em><div>Raise work order<small>Pending</small></div></div>
+        <div class="sync">Sync when online</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ul class="facts">
+  <li><strong>Swift</strong><span>SwiftUI · UIKit</span></li>
+  <li><strong>Offline-first</strong><span>SQLite + background sync</span></li>
+  <li><strong>Camera &amp; AR</strong><span>AVFoundation · ARKit</span></li>
+  <li><strong>App Extensions</strong><span>Keyboard · Widget · Share</span></li>
+</ul>
+
+<section id="about" class="section">
+  <div class="section-head">
+    <p class="eyebrow">// About</p>
+    <h2>Building dependable apps for the field</h2>
+  </div>
+  <div class="about">
+    <div>
+      <p>I'm an <strong>iOS developer at Sclera</strong>, where I work on an enterprise inspection and asset-management app used by field inspectors, often with no network at all.</p>
+      <p>My work covers <strong>scanning (QR, barcode, NFC), offline storage and sync, REST integration</strong>, and profiling with Xcode Instruments to reduce crashes and memory issues.</p>
+      <p>Outside work I build my own apps, like <strong>ClipVault</strong>, a clipboard history app with a keyboard, widget and share extension, to go deeper into iOS platform limits and Swift concurrency.</p>
+    </div>
+    <div class="edu">
+      <div class="card"><h3>B.E. Computer Science</h3><p>SDM Institute of Technology, Ujire · 2021 – 2025 · CGPA 8.4 / 10</p></div>
+      <div class="card"><h3>Based in Kasargod, Kerala</h3><p>Open to iOS development roles and interesting problems.</p></div>
+    </div>
+  </div>
 </section>
 
 <section id="sclera" class="section">
   <div class="section-head">
-    <p class="eyebrow">Featured · Sep 2025 – Present</p>
+    <p class="eyebrow">// Featured · Sep 2025 – Present</p>
     <h2>Sclera iOS App</h2>
     <p class="sub">An enterprise inspection and asset-management app for iPhone and iPad. Field inspectors run checklist-based inspections, scan assets and raise work orders, including with no network. It syncs with the Sclera backend when connectivity returns.</p>
   </div>
 
-  <div class="grid cols-2">
-    <article class="card">
-      <h3>Offline-first architecture</h3>
-      <p>An embedded Vapor HTTP server runs inside the app. It serves a web front end and local REST APIs, backed by SQLite, with background sync to the cloud when the device is back online.</p>
-      <div class="tags"><span>Vapor</span><span>SQLite</span><span>WKWebView</span><span>REST</span></div>
-    </article>
-
-    <article class="card">
-      <h3>Native signature capture</h3>
-      <p>A SwiftUI drawing pad with transparent PNG export. A local API opens the screen, waits up to 60 seconds and returns the base64 image. I extended the record-checklist APIs and offline database with inspector name, signature image and a signature-enabled flag, so offline signatures are stored locally and served from a local image URL.</p>
-      <div class="tags"><span>SwiftUI</span><span>Local API</span><span>SQLite</span></div>
-    </article>
-
-    <article class="card">
-      <h3>QR, barcode &amp; NFC flows</h3>
-      <p>Worked on scanning flows including secure QR validation and remote-session registration via QR.</p>
-      <div class="tags"><span>AVFoundation</span><span>NFC</span><span>QR</span></div>
-    </article>
-
-    <article class="card">
-      <h3>Secure remote access</h3>
-      <p>Worked on the app's VPN and peer-to-peer tunnel components built on Network Extension, used for secure remote access.</p>
-      <div class="tags"><span>Network Extension</span><span>VPN</span></div>
-    </article>
-
-    <article class="card">
-      <h3>Monitoring &amp; release</h3>
-      <p>Used Firebase Crashlytics, Performance and Remote Config for monitoring and configuration. Handled App Store Connect archive and upload, including resolving dSYM warnings.</p>
-      <div class="tags"><span>Firebase</span><span>App Store Connect</span></div>
-    </article>
+  <div class="sclera-wrap">
+    <div class="feat-list">
+      <article class="feat active" tabindex="0" role="button" aria-label="Show Offline-first architecture demo">
+        <span class="ico i1">🗄️</span>
+        <div><h3>Offline-first architecture</h3><p>An embedded Vapor HTTP server runs inside the app. It serves a web front end and local REST APIs, backed by SQLite, with background sync to the cloud when the device is back online.</p><div class="tags"><span>Vapor</span><span>SQLite</span><span>WKWebView</span><span>REST</span></div></div>
+      </article>
+      <article class="feat" tabindex="0" role="button" aria-label="Show QR, barcode &amp; NFC flows demo">
+        <span class="ico i3">📷</span>
+        <div><h3>QR, barcode &amp; NFC flows</h3><p>Worked on scanning flows including secure QR validation and remote-session registration via QR.</p><div class="tags"><span>AVFoundation</span><span>NFC</span><span>QR</span></div></div>
+      </article>
+      <article class="feat" tabindex="0" role="button" aria-label="Show Secure remote access demo">
+        <span class="ico i4">🛡️</span>
+        <div><h3>Secure remote access</h3><p>Worked on the app's VPN and peer-to-peer tunnel components built on Network Extension, used for secure remote access.</p><div class="tags"><span>Network Extension</span><span>VPN</span></div></div>
+      </article>
+      <article class="feat" tabindex="0" role="button" aria-label="Show Monitoring &amp; release demo">
+        <span class="ico i5">🚀</span>
+        <div><h3>Monitoring &amp; release</h3><p>Used Firebase Crashlytics, Performance and Remote Config for monitoring and configuration. Handled App Store Connect archive and upload, including resolving dSYM warnings.</p><div class="tags"><span>Firebase</span><span>App Store Connect</span></div></div>
+      </article>
+    </div>
+    <div class="pc-phone sticky"><div class="pphone sclera-phone"><div class="pscreen"><div class="ptop"><span class="tm">9:41</span><i class="pisland"></i><span class="sti"><u></u><u></u><u></u><u></u><s></s></span></div>
+      <div class="demo sc" aria-hidden="true">
+        <div class="ptitle">Inspections</div>
+        <div class="banner stk"><span class="amber a-hide" style="--t:4s">⚠ No network · working offline</span><span class="green a-show" style="--t:4s">● Back online · syncing</span></div>
+        <div class="drow a-in" style="--t:0.4s"><div><b>Pump station A</b><small>Checklist · 12 items</small></div><span class="stk"><i class="chip amber a-hide" style="--t:4.1s">Saved locally</i><i class="chip green a-show" style="--t:4.1s">Synced ✓</i></span></div>
+        <div class="drow a-in" style="--t:1s"><div><b>Cooling unit 3</b><small>Checklist · 8 items</small></div><span class="stk"><i class="chip amber a-hide" style="--t:4.5s">Saved locally</i><i class="chip green a-show" style="--t:4.5s">Synced ✓</i></span></div>
+        <div class="drow a-in" style="--t:1.6s"><div><b>Generator room</b><small>Checklist · 15 items</small></div><span class="stk"><i class="chip amber a-hide" style="--t:4.9s">Saved locally</i><i class="chip green a-show" style="--t:4.9s">Synced ✓</i></span></div>
+        <div class="dbf a-show" style="--t:2.2s"><span>Local database</span><b>3 records</b></div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="demo sc" aria-hidden="true">
+        <div class="ptitle">Scan</div>
+        <div class="seg"><span class="on">QR</span><span>Barcode</span><span>NFC</span></div>
+        <div class="vf sm" style="align-self:center"><svg viewBox="0 0 90 90" fill="currentColor"><rect x="0" y="0" width="30" height="30" fill="none" stroke="currentColor" stroke-width="6"/><rect x="10" y="10" width="10" height="10"/><rect x="60" y="0" width="30" height="30" fill="none" stroke="currentColor" stroke-width="6"/><rect x="70" y="10" width="10" height="10"/><rect x="0" y="60" width="30" height="30" fill="none" stroke="currentColor" stroke-width="6"/><rect x="10" y="70" width="10" height="10"/><rect x="30" y="0" width="10" height="10"/><rect x="30" y="10" width="10" height="10"/><rect x="30" y="20" width="10" height="10"/><rect x="10" y="30" width="10" height="10"/><rect x="20" y="30" width="10" height="10"/><rect x="30" y="30" width="10" height="10"/><rect x="60" y="30" width="10" height="10"/><rect x="20" y="40" width="10" height="10"/><rect x="30" y="40" width="10" height="10"/><rect x="50" y="40" width="10" height="10"/><rect x="60" y="40" width="10" height="10"/><rect x="70" y="40" width="10" height="10"/><rect x="80" y="40" width="10" height="10"/><rect x="0" y="50" width="10" height="10"/><rect x="10" y="50" width="10" height="10"/><rect x="50" y="50" width="10" height="10"/><rect x="70" y="50" width="10" height="10"/><rect x="80" y="50" width="10" height="10"/><rect x="70" y="60" width="10" height="10"/><rect x="80" y="60" width="10" height="10"/><rect x="30" y="70" width="10" height="10"/><rect x="40" y="70" width="10" height="10"/><rect x="60" y="70" width="10" height="10"/><rect x="80" y="70" width="10" height="10"/><rect x="50" y="80" width="10" height="10"/><rect x="60" y="80" width="10" height="10"/><rect x="80" y="80" width="10" height="10"/></svg><i class="scan"></i><span class="okay a-in" style="--t:3s">✓ Valid</span></div>
+        <div class="res a-in" style="--t:3.4s"><em>✓</em><span>Secure QR validated</span></div>
+        <div class="res a-in" style="--t:3.9s"><em>✓</em><span>Remote session registered</span></div>
+      </div>
+      <div class="demo sc" aria-hidden="true">
+        <div class="ptitle">Remote access</div>
+        <div class="tl" style="margin:6px 0 10px"><span class="node">📱</span>
+          <div class="line"><i class="fill"></i><i class="pkt" style="--t:.9s"></i><i class="pkt" style="--t:1.7s"></i><span class="lock a-in" style="--t:2.3s">🔒</span></div>
+          <span class="node">💻</span></div>
+        <span class="step" style="--t:.5s">Network Extension started</span>
+        <span class="step" style="--t:1.4s">Peer connected</span>
+        <span class="step" style="--t:2.3s">Tunnel secured</span>
+        <span class="chip green a-in" style="--t:3s;align-self:flex-start">● Connected · peer-to-peer</span>
+      </div>
+      <div class="demo sc" aria-hidden="true">
+        <div class="ptitle">Release</div>
+        <span class="step" style="--t:.6s">📦 Archive</span>
+        <span class="step" style="--t:1.6s">⬆ Upload to App Store Connect</span>
+        <div class="bar"><i></i></div>
+        <div class="dbf a-in" style="--t:3s"><span>dSYM files</span><b class="gr">Uploaded ✓</b></div>
+        <div class="dbf a-in" style="--t:3.5s"><span>Remote Config</span><span class="tog" style="--t:4.2s"><i></i></span></div>
+        <p class="cap a-show" style="--t:3.8s;text-align:left">Crashlytics · Performance</p>
+      </div>
+      </div></div><p class="phone-note">Illustration of the app's offline-first flows</p></div>
   </div>
 
-  <p class="stack"><strong>Stack:</strong> Swift, UIKit, SwiftUI, Vapor, SQLite, WKWebView, Network Extension, Firebase, CocoaPods, Swift Package Manager</p>
+  <p class="stack"><strong>Stack:</strong> Swift, UIKit, SwiftUI, Vapor, SQLite, WKWebView, Network Extension, Firebase, CocoaPods, Swift Package Manager · 23-language localization</p>
 </section>
 
 <section id="projects" class="section">
   <div class="section-head">
-    <p class="eyebrow">More iOS work</p>
+    <p class="eyebrow">// More iOS work</p>
     <h2>Projects</h2>
   </div>
-  <div class="grid cols-2">
-    <article class="card">
-      <h3>Smart Inventory</h3>
-      <p>An iOS app built in Swift for asset tracking. Scan a QR code or barcode to instantly retrieve and manage asset details.</p>
-      <div class="tags"><span>Swift</span><span>AVFoundation</span><span>QR / Barcode</span></div>
+  <div class="grid one">
+    <article class="card has-phone featured">
+      <div class="pc-text">
+      <span class="badge">Secondary project · Personal</span>
+      <h3>ClipVault: clipboard history for iPhone</h3>
+      <p>iOS keeps only one thing on the clipboard. ClipVault keeps a searchable history you can pin, and paste back from four places: the app, the share sheet, a custom keyboard and a Home Screen widget. Everything stays on the device, with no server, account or analytics.</p>
+      
+      <div class="pops" aria-label="Where ClipVault works">
+        <span class="pop" style="--i:0">📱 App</span><span class="pop" style="--i:1">📤 Share sheet</span><span class="pop" style="--i:2">⌨️ Keyboard</span><span class="pop" style="--i:3">🧩 Widget</span>
+      </div>
+      <ul class="points">
+        <li><strong>Built around iOS limits.</strong> iOS can't report copies in the background, so ClipVault saves only on user action: the system Paste button (no "Allow Paste" alert), the share sheet, a Shortcut or Action button, or when the app or keyboard is open.</li>
+        <li><strong>Four targets, one shared core.</strong> App, Share extension, Keyboard extension and WidgetKit widget share one SwiftData store through an App Group, using a local Swift package (ClipKit) with 53 automated tests.</li>
+        <li><strong>Privacy by default.</strong> One-time codes and card numbers (Luhn check) are masked, hidden from the widget and deleted after 10 minutes. Optional Face ID lock for the app.</li>
+        <li><strong>Memory-aware keyboard.</strong> Text-only rows, capped at 50, with full text loaded only on tap, to stay inside the extension memory budget. It degrades clearly when Full Access is off.</li>
+        <li><strong>Shortcuts and Siri.</strong> App Intents to save or copy a clip, usable from the Action button and widget taps. Built with Swift 6 strict concurrency, with a string catalog ready for translation.</li>
+      </ul>
+      <div class="tags"><span>Swift 6</span><span>SwiftUI</span><span>SwiftData</span><span>Actors</span><span>App Extensions</span><span>WidgetKit</span><span>App Intents</span><span>App Groups</span><span>LocalAuthentication</span></div>
+      <p class="note">Status: in development. Shared logic is unit tested; keyboard, widget and share-sheet behavior is still being verified on a physical iPhone.</p>
+      </div>
+      <div class="pc-phone"><div class="pphone cvp"><div class="pscreen"><div class="ptop"><span class="tm">9:41</span><i class="pisland"></i><span class="sti"><u></u><u></u><u></u><u></u><s></s></span></div>
+<div class="demo cv" aria-hidden="true">
+        <div class="ptitle">ClipVault</div>
+        <div class="search a-in" style="--t:.2s">🔍 Search clips</div>
+        <div class="lbl">PINNED</div>
+        <div class="crow a-in" style="--t:.5s"><span class="e">📌</span><span>name@email.com</span></div>
+        <div class="lbl">RECENT</div>
+        <div class="crow a-in" style="--t:.9s"><span class="e">🔗</span><span>example.com/track</span></div>
+        <div class="crow a-in pick" style="--t:1.3s"><span class="e">📍</span><span>Delivery address</span></div>
+        <div class="crow a-in" style="--t:1.7s"><span class="e">🔢</span><span>••••••</span><em>10 min</em></div>
+        <div class="pastebtn a-in" style="--t:2.2s">📋 Paste</div>
+        <span class="chip green copied a-in" style="--t:3s">✓ Copied</span>
+      </div>
+      </div></div></div>
     </article>
-    <article class="card">
+    <article class="card has-phone">
+      <div class="pc-text">
+      <span class="ico i6">📦</span>
+      <h3>Smart Inventory: asset scanning &amp; onboarding</h3>
+      <p>An iOS app built in Swift for tracking assets end to end. Point the camera at a QR code or barcode and the app identifies the asset in an instant. If the code is already registered, you get its full details. If it isn't, the same scan takes you straight into onboarding, so a new asset goes from a physical label to a complete record in one flow.</p>
+      <ul class="points">
+        <li><strong>Scan to identify.</strong> Live QR and barcode scanning with AVFoundation, with the camera preview, scan area and result handling built natively.</li>
+        <li><strong>Onboard new assets.</strong> An unregistered code opens an onboarding form with the scanned code pre-filled as the asset ID. Add the asset's name, category, location and status, then save.</li>
+        <li><strong>View and manage details.</strong> A registered asset opens a details screen, so its information can be reviewed and kept up to date.</li>
+        <li><strong>Built for speed in the field.</strong> One scan, one screen: no typing IDs by hand, which keeps records consistent.</li>
+      </ul>
+      <div class="tags"><span>Swift</span><span>AVFoundation</span><span>QR / Barcode</span><span>Asset onboarding</span><span>Forms &amp; validation</span></div>
+      </div>
+      <div class="pc-phone"><div class="pphone"><div class="pscreen"><div class="ptop"><span class="tm">9:41</span><i class="pisland"></i><span class="sti"><u></u><u></u><u></u><u></u><s></s></span></div>
+      <div class="demo si2" aria-hidden="true">
+        <div class="stage">
+          <div class="layer a-hide" style="--t:3.4s">
+            <div class="ptitle">Scan asset</div>
+            <div class="vf wide"><svg viewBox="0 0 111 40" fill="currentColor" preserveAspectRatio="none"><rect x="0" y="0" width="3" height="40"/><rect x="5" y="0" width="1" height="40"/><rect x="8" y="0" width="2" height="40"/><rect x="12" y="0" width="1" height="40"/><rect x="15" y="0" width="4" height="40"/><rect x="21" y="0" width="1" height="40"/><rect x="24" y="0" width="1" height="40"/><rect x="27" y="0" width="3" height="40"/><rect x="32" y="0" width="2" height="40"/><rect x="36" y="0" width="1" height="40"/><rect x="39" y="0" width="3" height="40"/><rect x="44" y="0" width="1" height="40"/><rect x="47" y="0" width="2" height="40"/><rect x="51" y="0" width="4" height="40"/><rect x="57" y="0" width="1" height="40"/><rect x="60" y="0" width="2" height="40"/><rect x="64" y="0" width="1" height="40"/><rect x="67" y="0" width="3" height="40"/><rect x="72" y="0" width="1" height="40"/><rect x="75" y="0" width="1" height="40"/><rect x="78" y="0" width="2" height="40"/><rect x="82" y="0" width="3" height="40"/><rect x="87" y="0" width="1" height="40"/><rect x="90" y="0" width="4" height="40"/><rect x="96" y="0" width="1" height="40"/><rect x="99" y="0" width="2" height="40"/><rect x="103" y="0" width="1" height="40"/><rect x="106" y="0" width="3" height="40"/></svg><i class="scan h"></i></div>
+            <div class="cap a-hide" style="--t:2.4s">Scanning…</div>
+            <div class="res a-in" style="--t:2.4s;background:rgba(255,179,64,.14);color:#ffb340"><em style="background:#ffb340">!</em><span>New asset · not registered</span></div>
+            <div class="kv a-in" style="--t:2.8s"><span>Scanned code</span><strong class="mono">AST-0042</strong></div>
+          </div>
+          <div class="layer a-show" style="--t:3.4s">
+            <div class="ptitle">Onboard asset</div>
+            <div class="fld a-in" style="--t:3.7s"><label>Asset ID</label><div class="val mono">AST-0042 <em>from scan</em></div></div>
+            <div class="fld a-in" style="--t:4.1s"><label>Name</label><div class="val"><span class="typ" style="--n:6;--t:4.4s">Laptop</span></div></div>
+            <div class="fld a-in" style="--t:4.5s"><label>Category</label><div class="val">Electronics <em>▾</em></div></div>
+            <div class="fld a-in" style="--t:4.9s"><label>Location</label><div class="val">Store room <em>▾</em></div></div>
+            <div class="seg a-in" style="--t:5.3s"><span class="on">In stock</span><span>In use</span><span>Repair</span></div>
+            <div class="savebtn a-in" style="--t:5.8s"><span>Save asset</span></div>
+            <span class="chip green a-in toastc" style="--t:7.2s">✓ Asset onboarded</span>
+          </div>
+        </div>
+      </div>
+      </div></div></div>
+    </article>
+    <article class="card has-phone">
+      <div class="pc-text">
+      <span class="ico i2">⏱️</span>
       <h3>TrackIn-out Auto-Scheduler</h3>
-      <p>An iOS check-in/check-out app with a monotonic flow and an auto check-out scheduler, so user activity is tracked accurately and automatically.</p>
-      <div class="tags"><span>Swift</span><span>Scheduling</span><span>State flow</span></div>
+      <p>An iOS app for checking in to an inspection and checking out again, with an auto check-out scheduler that closes the session after a set time, even if the user forgets. The flow is monotonic: a session only moves forward (checked out → checked in → checked out), so records can't end up in an impossible state.</p>
+      <ul class="points">
+        <li><strong>Check in to an inspection.</strong> One tap starts the session and records the check-in.</li>
+        <li><strong>Auto check-out after a set time.</strong> When you check in, a deadline is scheduled. When it passes, the app checks you out automatically.</li>
+        <li><strong>Works offline, and can't be cheated with the phone clock.</strong> Elapsed time is measured with a monotonic clock, not the wall-clock date and time. It needs no network, and changing the phone's date or time doesn't lengthen or shorten a session.</li>
+        <li><strong>Accurate activity tracking.</strong> Check-in and check-out are driven by real elapsed time, so the recorded duration stays trustworthy.</li>
+      </ul>
+      <div class="tags"><span>Swift</span><span>Monotonic clock</span><span>Scheduling</span><span>State flow</span><span>Offline-safe</span></div>
+      </div>
+      <div class="pc-phone"><div class="pphone"><div class="pscreen"><div class="ptop"><span class="tm">9:41</span><i class="pisland"></i><span class="sti"><u></u><u></u><u></u><u></u><s></s></span></div>
+      <div class="demo ti2" aria-hidden="true">
+        <div class="ptitle">Inspection</div>
+        <div class="chiprow"><span class="chip amber">● Offline</span><span class="chip blue">Monotonic clock</span></div>
+        <div class="ring"><div class="ring-in">
+          <span class="a-hide" style="--t:1s">Check in</span>
+          <span class="mid">Checked in</span>
+          <span class="a-show" style="--t:9s">Checked out</span>
+        </div></div>
+        <div class="elapsed"></div>
+        <div class="banner stk a-in" style="--t:4s"><span class="amber a-hide" style="--t:5.4s">⚠ Phone clock changed</span><span class="green a-show" style="--t:5.4s">✓ Timer unaffected</span></div>
+        <div class="dbf a-in" style="--t:1.2s"><span>Auto check-out</span><b>after 60 min</b></div>
+        <div class="res a-in" style="--t:9.2s"><em>✓</em><span>Auto checked out</span></div>
+      </div>
+      </div></div></div>
+    </article>
+    <article class="card bank">
+      <span class="ico i2">🏦</span>
+      <div>
+        <h3>Bank Management System</h3>
+        <p>A Java + MySQL desktop application with secure account management, real-time balance tracking, fund transfers and full transaction history, all through an intuitive GUI.</p>
+        <div class="tags"><span>Java</span><span>MySQL</span><span>Desktop GUI</span></div>
+      </div>
     </article>
   </div>
 </section>
 
 <section id="skills" class="section">
   <div class="section-head">
-    <p class="eyebrow">Toolbox</p>
+    <p class="eyebrow">// Toolbox</p>
     <h2>Skills</h2>
   </div>
   <div class="skills">
-    <div><h3>Frameworks</h3><p>SwiftUI, UIKit, ARKit, AVFoundation, Core Data, Auto Layout</p></div>
+    <div><h3>iOS frameworks</h3><p>SwiftUI, UIKit, SwiftData, Core Data, ARKit, AVFoundation, WidgetKit, App Intents, Network Extension, Auto Layout</p></div>
     <div><h3>Languages</h3><p>Swift, Java, C</p></div>
-    <div><h3>Data &amp; networking</h3><p>SQLite3, Core Data, REST APIs, JSON, authentication, error handling</p></div>
-    <div><h3>Tools</h3><p>Xcode, Instruments, Git, Postman, CocoaPods, Swift Package Manager</p></div>
+    <div><h3>Backend &amp; web</h3><p>Vapor, J2EE (Servlets, JSP), JDBC, REST APIs, JSON, HTML, CSS</p></div>
+    <div><h3>Data</h3><p>SQLite3, Core Data, SwiftData, MySQL</p></div>
+    <div><h3>Tools</h3><p>Xcode, Instruments, Git, Postman, Firebase, App Store Connect, CocoaPods, Swift Package Manager</p></div>
     <div><h3>Ways of working</h3><p>Agile, code review, debugging, performance profiling</p></div>
+    <div><h3>Soft skills</h3><p>Leadership, communication, collaboration, adaptability</p></div>
   </div>
 </section>
 
 <section id="experience" class="section">
   <div class="section-head">
-    <p class="eyebrow">Where I've worked</p>
+    <p class="eyebrow">// Where I've worked</p>
     <h2>Experience</h2>
   </div>
   <ol class="timeline">
@@ -129,7 +323,7 @@
       <div class="when">Feb 2025 – Jul 2025</div>
       <div>
         <h3>Software Intern · Pentagon Space Private Limited</h3>
-        <p>Built a full-stack banking web application with Java, Servlets, JSP, JDBC and MySQL. First hands-on experience with debugging and the project lifecycle in a team.</p>
+        <p>Built a full-stack banking web application (account creation, balance inquiry, fund transfer, transaction history) with Java, J2EE (Servlets and JSP), JDBC and MySQL. First hands-on experience with debugging and the project lifecycle in a team.</p>
       </div>
     </li>
   </ol>
@@ -137,25 +331,78 @@
 
 <section id="education" class="section">
   <div class="section-head">
-    <p class="eyebrow">Background</p>
+    <p class="eyebrow">// Where I studied</p>
     <h2>Education</h2>
   </div>
-  <ol class="timeline">
-    <li>
-      <div class="when">Dec 2021 – Jun 2025</div>
-      <div>
-        <h3>B.E. in Computer Science · SDM Institute of Technology, Ujire</h3>
-        <p>CGPA 8.4 / 10.</p>
+  <div class="grid edu-grid">
+    <article class="card">
+      <span class="ico i1">🎓</span>
+      <p class="period">Dec 2021 – Jun 2025</p>
+      <h3>B.E. in Computer Science</h3>
+      <p>SDM Institute of Technology, Ujire</p>
+      <div class="tags"><span>CGPA 8.4 / 10</span></div>
+    </article>
+    <article class="card">
+      <span class="ico i3">📘</span>
+      <p class="period">May 2019 – Jul 2021</p>
+      <h3>Pre-University (PCMC)</h3>
+      <p>Ambika Padavi Poorva Vidyalaya, Puttur</p>
+      <div class="tags"><span>78%</span></div>
+    </article>
+    <article class="card">
+      <span class="ico i6">🏫</span>
+      <p class="period">May 2016 – Apr 2019</p>
+      <h3>High School (CBSE)</h3>
+      <p>Holy Family Convent Public School, Kasargod</p>
+      <div class="tags"><span>64%</span></div>
+    </article>
+  </div>
+  <article class="card extra">
+    <span class="ico i5">❤️</span>
+    <div>
+      <p class="period">Extra-curricular</p>
+      <h3>Indian Red Cross Society, Karnataka</h3>
+      <ul class="points">
+        <li>Volunteered in blood donation camps and coordinated with medical staff to ensure the safety and comfort of 100+ donors.</li>
+        <li>Promoted awareness campaigns that led to a 20% increase in donor turnout.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section id="resume" class="section">
+  <div class="section-head">
+    <p class="eyebrow">// Resume</p>
+    <h2>Take a look at my resume</h2>
+    <p class="sub">A two-page summary of my experience, projects, skills and education.</p>
+  </div>
+  <div class="resume-card">
+    <div class="resume-info">
+      <div class="file"><span class="pdf">PDF</span><div><strong>Sharath_Resume.pdf</strong><small>2 pages · 105 KB</small></div></div>
+      <ul class="resume-points">
+        <li>iOS Developer · Swift, SwiftUI, UIKit</li>
+        <li>Offline-first, scanning and extensions</li>
+        <li>Sclera, ClipVault, Smart Inventory, TrackIn-out</li>
+        <li>Experience, education and activities</li>
+      </ul>
+      <div class="cta">
+        <a class="btn primary dl" href="Sharath_Resume.pdf" download="Sharath_Resume.pdf"><span class="dl-ic" aria-hidden="true">⬇</span><span class="dl-txt">Download PDF</span></a>
+        <button class="btn" type="button" data-open-resume>👁 Full-screen preview</button>
       </div>
-    </li>
-  </ol>
+    </div>
+    <div class="resume-frame">
+      <object data="Sharath_Resume.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" aria-label="Resume preview">
+        <div class="fallback"><p>Your browser can't show the PDF inline.</p><a class="btn primary" href="Sharath_Resume.pdf" target="_blank" rel="noopener">Open resume</a></div>
+      </object>
+    </div>
+  </div>
 </section>
 
 <section id="contact" class="section contact">
-  <h2>Let's talk</h2>
+  <h2>Let's <span class="grad">talk</span></h2>
   <p>Open to iOS development roles and interesting problems.</p>
   <div class="cta center">
-    <a class="btn primary" href="mailto:sharathjogi04@gmail.com">sharathjogi04@gmail.com</a>
+    <button class="btn primary copy" type="button" id="copyEmail" aria-label="Copy email address"><span class="cp-txt">sharathjogi04@gmail.com</span><span class="cp-ic" aria-hidden="true">⧉</span></button>
     <a class="btn" href="tel:+918137055683">+91 81370 55683</a>
     <a class="btn" href="https://www.linkedin.com/in/sharath-247a3a217?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
   </div>
@@ -164,6 +411,25 @@
 </main>
 
 <footer class="footer">© <span id="y"></span> Sharath · Built with plain HTML and CSS</footer>
+
+<div class="modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume preview" hidden>
+  <div class="modal-box">
+    <div class="modal-bar">
+      <strong>Sharath_Resume.pdf</strong>
+      <div class="modal-actions">
+        <a class="btn dl" href="Sharath_Resume.pdf" download="Sharath_Resume.pdf"><span class="dl-ic" aria-hidden="true">⬇</span><span class="dl-txt">Download</span></a>
+        <a class="btn" href="Sharath_Resume.pdf" target="_blank" rel="noopener">↗ New tab</a>
+        <button class="btn" type="button" id="closeResume" aria-label="Close preview">✕</button>
+      </div>
+    </div>
+    <object data="Sharath_Resume.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" aria-label="Resume">
+      <div class="fallback"><p>Your browser can't show the PDF inline.</p><a class="btn primary" href="Sharath_Resume.pdf" target="_blank" rel="noopener">Open resume</a></div>
+    </object>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+<button class="totop" id="totop" aria-label="Back to top">↑</button>
 
 <script src="script.js"></script>
 </body>
